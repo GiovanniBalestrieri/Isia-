@@ -50,7 +50,6 @@ void draw()
   if (cont>0)
   {  
     // Draw prevoius points
-    //
     drawHistory();
   }
 
@@ -68,7 +67,7 @@ void drawHistory()
   float posi;
   if (cont > oldPos-1)
   {
-    for (int i = 1; i<=oldPos-1; i++)
+    for (int i = 2; i<=oldPos-1; i++)
     {
       //preleva cont - i
       posi = history[i];
